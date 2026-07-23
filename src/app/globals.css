@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Anabel Pérez Lara — Portfolio editorial
+   Paleta cálida / nude · estética revista de moda
+   ============================================================ */
+
+:root {
+  --cream: #f6f1e7;
+  --cream-deep: #efe7d7;
+  --sand: #e0cdb6;
+  --sand-deep: #cbb097;
+  --terracotta: #b5674a;
+  --terracotta-deep: #8f4d34;
+  --ink: #2b2622;
+  --ink-soft: #5a524a;
+  --muted: #9a8f81;
+  --line: #d8cbb8;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-cream-deep: var(--cream-deep);
+  --color-sand: var(--sand);
+  --color-sand-deep: var(--sand-deep);
+  --color-terracotta: var(--terracotta);
+  --color-terracotta-deep: var(--terracotta-deep);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+
+  --font-display: var(--font-playfair);
+  --font-sans: var(--font-jost);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--terracotta);
+  color: var(--cream);
+}
+
+/* Tipografía display estilo portada de revista */
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.eyebrow {
+  font-family: var(--font-sans), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--terracotta-deep);
+}
+
+.section-index {
+  font-family: var(--font-sans), sans-serif;
+  letter-spacing: 0.2em;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+/* Regla fina editorial */
+.hairline {
+  height: 1px;
+  background: var(--line);
+  border: 0;
+}
+
+/* Cursor personalizado: ocultar el nativo en dispositivos con puntero fino */
+@media (hover: hover) and (pointer: fine) {
+  body.custom-cursor,
+  body.custom-cursor * {
+    cursor: none;
+  }
+}
+
+/* Marquee del hero */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 28s linear infinite;
+}
+
+/* Respeta reduce-motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee-track { animation: none; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
