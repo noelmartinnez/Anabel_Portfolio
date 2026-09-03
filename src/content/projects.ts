@@ -45,15 +45,6 @@ export const portraitPiece = mediaMap.__portrait as unknown as Piece | undefined
 export const projects: Project[] = [
   // ─── Clientes ────────────────────────────────────────────────────────────
   {
-    slug: "greene",
-    section: "clientes",
-    title: "Greene Enterprise",
-    subtitle: { es: "Contenido para redes", en: "Social media content" },
-    year: "2024 — 2025",
-    role: { es: "Community management", en: "Community management" },
-    tags: ["Instagram", "Fotografía", "Calendario editorial"],
-  },
-  {
     slug: "barbara",
     section: "clientes",
     title: "Bárbara Carretero",
