@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# assets: material bruto y pruebas del pipeline
+/scripts/.cache

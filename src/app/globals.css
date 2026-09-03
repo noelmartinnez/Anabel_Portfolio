@@ -2,20 +2,20 @@
 
 /* ============================================================
    Anabel Pérez Lara — Portfolio editorial
-   Paleta cálida / nude · estética revista de moda
+   Blanco hueso + tinta cálida · display serif y texto de máquina de escribir
    ============================================================ */
 
 :root {
-  --cream: #f6f1e7;
-  --cream-deep: #efe7d7;
-  --sand: #e0cdb6;
-  --sand-deep: #cbb097;
+  --cream: #fbfaf6;
+  --cream-deep: #f1efe8;
+  --sand: #e4dfd3;
+  --sand-deep: #c9c1b1;
   --terracotta: #b5674a;
   --terracotta-deep: #8f4d34;
-  --ink: #2b2622;
-  --ink-soft: #5a524a;
-  --muted: #9a8f81;
-  --line: #d8cbb8;
+  --ink: #262220;
+  --ink-soft: #565049;
+  --muted: #948c81;
+  --line: #e2ddd2;
 }
 
 @theme inline {
@@ -31,7 +31,7 @@
   --color-line: var(--line);
 
   --font-display: var(--font-playfair);
-  --font-sans: var(--font-jost);
+  --font-sans: var(--font-courier);
 }
 
 * {
@@ -48,8 +48,8 @@ body {
   background: var(--cream);
   color: var(--ink);
   font-family: var(--font-sans), system-ui, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 15.5px;
+  line-height: 1.75;
   overflow-x: hidden;
 }
 
@@ -66,7 +66,7 @@ body {
 .eyebrow {
   font-family: var(--font-sans), sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.18em;
   font-size: 0.72rem;
   font-weight: 500;
   color: var(--terracotta-deep);
@@ -74,7 +74,7 @@ body {
 
 .section-index {
   font-family: var(--font-sans), sans-serif;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.14em;
   font-size: 0.72rem;
   color: var(--muted);
 }
@@ -86,29 +86,37 @@ body {
   border: 0;
 }
 
-/* Cursor personalizado: ocultar el nativo en dispositivos con puntero fino */
+/* Cursor personalizado: solo en punteros finos y sin reduce-motion.
+   Fuera de ese caso ni se pinta ni se oculta el cursor nativo. */
+.cursor-layer {
+  display: none;
+}
+
 @media (hover: hover) and (pointer: fine) {
+  .cursor-layer {
+    display: block;
+  }
+
   body.custom-cursor,
   body.custom-cursor * {
     cursor: none;
   }
 }
 
-/* Marquee del hero */
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-.marquee-track {
-  display: inline-flex;
-  white-space: nowrap;
-  animation: marquee 28s linear infinite;
+@media (prefers-reduced-motion: reduce) {
+  .cursor-layer {
+    display: none;
+  }
+
+  body.custom-cursor,
+  body.custom-cursor * {
+    cursor: auto;
+  }
 }
 
 /* Respeta reduce-motion */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .marquee-track { animation: none; }
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;

@@ -15,3 +15,5 @@ La idea es tener un registro claro de *qué* se hizo, *por qué* y *cómo*, para
 | Fecha | Entrada | Resumen |
 |-------|---------|---------|
 | 2026-07-23 | [Arranque del portfolio](./2026-07-23-arranque-portfolio.md) | Scaffold Next.js, sistema de diseño editorial y todas las secciones |
+| 2026-09-01 | [Galería de trabajos reales](./2026-09-01-galeria-de-trabajos-reales.md) | Pipeline de assets, rejilla por secciones y una página por proyecto |
+| 2026-09-01 | [Portada limpia y nombres reales](./2026-09-01-portada-limpia-y-nombres-reales.md) | Hero reducido al nombre, clientes con su nombre real y portada elegible |

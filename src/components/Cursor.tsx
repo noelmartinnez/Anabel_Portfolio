@@ -6,10 +6,11 @@ import { motion, useMotionValue, useSpring } from "motion/react";
 /**
  * Cursor personalizado editorial: un punto que sigue al ratón y un anillo
  * que lo persigue con retardo. Se agranda sobre elementos interactivos.
- * Sólo se activa en dispositivos con puntero fino (ratón).
+ *
+ * Quién puede verlo lo decide el CSS (`.cursor-layer`, oculto salvo en
+ * punteros finos y sin `prefers-reduced-motion`), no un estado de React.
  */
 export function Cursor() {
-  const [enabled, setEnabled] = useState(false);
   const [hovering, setHovering] = useState(false);
 
   const x = useMotionValue(-100);
@@ -18,21 +19,13 @@ export function Cursor() {
   const ringY = useSpring(y, { stiffness: 300, damping: 28, mass: 0.6 });
 
   useEffect(() => {
-    const fine =
-      window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (!fine || reduce) return;
-
-    setEnabled(true);
     document.body.classList.add("custom-cursor");
 
     const move = (e: MouseEvent) => {
       x.set(e.clientX);
       y.set(e.clientY);
       const target = e.target as HTMLElement;
-      setHovering(
-        !!target.closest("a, button, [data-cursor='hover']")
-      );
+      setHovering(!!target.closest("a, button, [data-cursor='hover']"));
     };
 
     window.addEventListener("mousemove", move);
@@ -42,10 +35,8 @@ export function Cursor() {
     };
   }, [x, y]);
 
-  if (!enabled) return null;
-
   return (
-    <>
+    <div className="cursor-layer">
       <motion.div
         aria-hidden
         style={{ x, y }}
@@ -70,6 +61,6 @@ export function Cursor() {
           }}
         />
       </motion.div>
-    </>
+    </div>
   );
 }

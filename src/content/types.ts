@@ -1,29 +1,9 @@
-export type ExperienceItem = {
-  role: string;
-  company: string;
-  period: string;
-  mode: string;
-  description: string;
-  tags: string[];
-};
-
-export type EducationItem = {
-  school: string;
-  degree: string;
-  period: string;
-  note?: string;
-};
-
-export type SkillGroup = {
+/** Cabecera de una de las dos rejillas de la portada. */
+export type GridHeading = {
+  index: string;
+  eyebrow: string;
   title: string;
-  items: string[];
-};
-
-export type LanguageSkill = {
-  name: string;
-  level: string;
-  /** 0–100 para la barra */
-  value: number;
+  intro: string;
 };
 
 export type Content = {
@@ -32,71 +12,45 @@ export type Content = {
     description: string;
   };
   nav: {
-    about: string;
     work: string;
-    experience: string;
-    education: string;
     contact: string;
   };
   hero: {
-    edition: string;
-    issue: string;
     name: string[];
-    role: string;
-    tagline: string;
-    scroll: string;
-    marquee: string[];
   };
+  /** Presentación breve, bajo el nombre de la portada. */
   about: {
-    index: string;
-    eyebrow: string;
-    title: string;
-    body: string[];
-    facts: { label: string; value: string }[];
+    intro: string[];
   };
-  work: {
-    index: string;
-    eyebrow: string;
-    title: string;
-    intro: string;
-    note: string;
-  };
-  experience: {
-    index: string;
-    eyebrow: string;
-    title: string;
-    items: ExperienceItem[];
-  };
-  education: {
-    index: string;
-    eyebrow: string;
-    title: string;
-    items: EducationItem[];
-  };
-  skills: {
-    index: string;
-    eyebrow: string;
-    title: string;
-    groups: SkillGroup[];
-    languagesTitle: string;
-    languages: LanguageSkill[];
-    extrasTitle: string;
-    extras: string[];
+  /** Las dos familias de trabajo de la portada. */
+  clientes: GridHeading;
+  proyectos: GridHeading;
+  /** Etiquetas de la página de proyecto. */
+  project: {
+    back: string;
+    prev: string;
+    next: string;
+    close: string;
+    /** Pie de la portada de un dossier: "Ver el documento completo · 31 páginas". */
+    openDossier: string;
+    pages: string;
   };
   contact: {
     index: string;
     eyebrow: string;
     title: string;
-    body: string;
     cta: string;
     email: string;
+    phoneLabel: string;
     phone: string;
+    locationLabel: string;
     location: string;
     linkedin: string;
     linkedinUrl: string;
+    instagram: string;
+    instagramUrl: string;
   };
   footer: {
     rights: string;
-    made: string;
   };
 };
