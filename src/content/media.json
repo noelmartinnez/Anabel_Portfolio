@@ -3041,5 +3041,105 @@
     "w": 1080,
     "h": 1440,
     "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADwBACdASoPABQAPu1iqU2ppaQiMAgBMB2JQBdmUGP7T/7oAA/CJVm3U9XvODTBf2AA/u1hlW9BV8HBDbYZGjNXiUidcJmarf4+gApGfGwzEw+xcebWnGv0ic1FNp5Wz+3HX/7Trj+Nj0KT6cf+ZiUfFFqIduvmuOJIY2uB/rmoyW1XgyFPUAAA"
+  },
+  "bad-bunny-rick-owens": {
+    "cover": {
+      "kind": "slide",
+      "src": "/work/bad-bunny-rick-owens/p-01.webp",
+      "w": 2400,
+      "h": 1349,
+      "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAABQAwCdASoUAAsAPu1kqk4ppaQiMAgBMB2JZwDKAB9EGRRRgAD+8d+ZKsVfTn+hdcRbJxy0qCHqyyjC4TtOLd5Sjt+JP1mR9QAAAA==",
+      "group": "p"
+    },
+    "pieces": [
+      {
+        "kind": "slide",
+        "src": "/work/bad-bunny-rick-owens/p-01.webp",
+        "w": 2400,
+        "h": 1349,
+        "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAABQAwCdASoUAAsAPu1kqk4ppaQiMAgBMB2JZwDKAB9EGRRRgAD+8d+ZKsVfTn+hdcRbJxy0qCHqyyjC4TtOLd5Sjt+JP1mR9QAAAA==",
+        "group": "p"
+      },
+      {
+        "kind": "slide",
+        "src": "/work/bad-bunny-rick-owens/p-02.webp",
+        "w": 2400,
+        "h": 1349,
+        "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JZwAAXg7mnXr/sfP/AAD+8ECfF+PU7JazHpSR+onGhKm8tNAoAA==",
+        "group": "p"
+      },
+      {
+        "kind": "slide",
+        "src": "/work/bad-bunny-rick-owens/p-03.webp",
+        "w": 2400,
+        "h": 1349,
+        "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JZwDGfCFcK+F0vQTKgAD+8ECdopxZue9OaO696sLxWVEQXiZqAvif+xAO/oukyMq6AAAA",
+        "group": "p"
+      },
+      {
+        "kind": "slide",
+        "src": "/work/bad-bunny-rick-owens/p-04.webp",
+        "w": 2400,
+        "h": 1349,
+        "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACQAwCdASoUAAsAPu1krU2ppaSiMAgBMB2JaQAAW+mv9nI4nioAAP7yILg4TQyaThcne9lyiLEZKgW2RaK1wR96YfOts+RZsS7EAAAA",
+        "group": "p"
+      },
+      {
+        "kind": "slide",
+        "src": "/work/bad-bunny-rick-owens/p-05.webp",
+        "w": 2400,
+        "h": 1349,
+        "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JaQAAW5BIg8cx6nNcAAD+8EopFBtyPSlAVvoPGUl9CT7pEuuVKUpBDnYwlJHVbAAAAA==",
+        "group": "p"
+      },
+      {
+        "kind": "slide",
+        "src": "/work/bad-bunny-rick-owens/p-06.webp",
+        "w": 2400,
+        "h": 1349,
+        "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAwCdASoUAAsAPu1iqU2ppaQiMAgBMB2JaQAAXKK6zWAA/vHwX5mDYi3Y1lVLIaW3D19dFpbsGQrwPZJj0wAA",
+        "group": "p"
+      },
+      {
+        "kind": "slide",
+        "src": "/work/bad-bunny-rick-owens/p-07.webp",
+        "w": 2400,
+        "h": 1349,
+        "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABQAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JaQAAW8EAH+6agAD+8coZgsFVBvtaEE99tWL4A/DT74c8+pbUk/gAAAA=",
+        "group": "p"
+      },
+      {
+        "kind": "slide",
+        "src": "/work/bad-bunny-rick-owens/p-08.webp",
+        "w": 2400,
+        "h": 1349,
+        "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JaQAAXlQnVMAA/u46FEc9gq6n7Vb/yjEeTPOe25X8jwwq7bXj8Li8cZK81yx08w8Q17YAAAA=",
+        "group": "p"
+      },
+      {
+        "kind": "slide",
+        "src": "/work/bad-bunny-rick-owens/p-09.webp",
+        "w": 2400,
+        "h": 1349,
+        "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAABQAwCdASoUAAsAPu1iqU2ppaOiMAgBMB2JZQAAWp9QOCvUAAD+7jqtvyuQYEsZoxsispL1Oh1o9O6Ww358MLINbZpQAA==",
+        "group": "p"
+      },
+      {
+        "kind": "slide",
+        "src": "/work/bad-bunny-rick-owens/p-10.webp",
+        "w": 2400,
+        "h": 1349,
+        "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAABQAwCdASoUAAsAPu1iqU2ppaQiMAgBMB2JaQAAV/78Vaf5QAD+8EHtlzmrARck9xrYz6DRNXlaWfF0ntZuBwAA",
+        "group": "p"
+      },
+      {
+        "kind": "slide",
+        "src": "/work/bad-bunny-rick-owens/p-11.webp",
+        "w": 2400,
+        "h": 1349,
+        "blur": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAgCdASoUAAsAPu1iqU2ppaQiMAgBMB2JaQAAeyAA/vDLQAA=",
+        "group": "p"
+      }
+    ]
   }
 }

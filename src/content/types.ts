@@ -22,9 +22,10 @@ export type Content = {
   about: {
     intro: string[];
   };
-  /** Las dos familias de trabajo de la portada. */
+  /** Las familias de trabajo de la portada. */
   clientes: GridHeading;
   proyectos: GridHeading;
+  estilismo: GridHeading;
   /** Etiquetas de la página de proyecto. */
   project: {
     back: string;

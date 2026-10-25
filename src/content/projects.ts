@@ -1,6 +1,6 @@
 import media from "./media.json";
 
-export type Section = "clientes" | "proyectos";
+export type Section = "clientes" | "proyectos" | "estilismo";
 
 export type Piece = {
   kind: "image" | "slide" | "video";
@@ -284,6 +284,21 @@ export const projects: Project[] = [
       en: "An explainer video on the use of colour through art history and what advertising still owes it.",
     },
     tags: ["Audiovisual", "Divulgación", "Color"],
+  },
+
+  // ─── Estilismo ───────────────────────────────────────────────────────────
+  {
+    slug: "bad-bunny-rick-owens",
+    section: "estilismo",
+    title: "Bad Bunny × Rick Owens",
+    subtitle: { es: "Propuesta de estilismo", en: "Styling proposal" },
+    year: "2026",
+    role: { es: "Estilismo y dirección de imagen", en: "Styling and image direction" },
+    description: {
+      es: "Tres looks de Rick Owens para vestir a Bad Bunny en la alfombra roja de los Grammy 2027, bajo el concepto «Anomalía»: sastrería oscura, volúmenes que rompen la proporción y un único acento de color por look, con peluquería y maquillaje pensados para cada uno.",
+      en: "Three Rick Owens looks dressing Bad Bunny for the 2027 Grammys red carpet under the concept «Anomaly»: dark tailoring, volumes that break proportion and a single accent of colour per look, with hair and make-up designed for each.",
+    },
+    tags: ["Estilismo", "Moda", "Alfombra roja"],
   },
 ];
 

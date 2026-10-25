@@ -26,12 +26,12 @@ export const metadata: Metadata = {
   // Solo el nombre: es lo que se lee en la pestaña, donde no cabe mas.
   title: "Anabel Pérez Lara",
   description:
-    "Portfolio de Anabel Pérez Lara, estudiante de Publicidad y Relaciones Públicas y Community Manager. Creatividad, comunicación y estrategia de marca.",
+    "Portfolio creativo de Anabel Pérez: comunicación, fotografía, estilismo y estrategia de marca.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Anabel Pérez Lara — Publicidad & Relaciones Públicas",
+    title: "Anabel Pérez",
     description:
-      "Creatividad, comunicación y estrategia de marca. Portfolio de Anabel Pérez Lara.",
+      "Portfolio creativo de Anabel Pérez: comunicación, fotografía, estilismo y estrategia de marca.",
     type: "website",
     locale: "es_ES",
     siteName: "Anabel Pérez Lara",
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anabel Pérez Lara — Publicidad & Relaciones Públicas",
+    title: "Anabel Pérez",
     description:
-      "Creatividad, comunicación y estrategia de marca. Portfolio de Anabel Pérez Lara.",
+      "Portfolio creativo de Anabel Pérez: comunicación, fotografía, estilismo y estrategia de marca.",
   },
 };
 

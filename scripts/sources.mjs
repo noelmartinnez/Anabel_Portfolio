@@ -126,6 +126,14 @@ export const sources = [
     // un CRF algo mas alto para que un solo archivo no se coma el repo.
     sources: [{ type: "video", path: "Trabajos/Vídeo el color en el arte.mp4", crf: 23 }],
   },
+
+  // ─── Estilismo ───────────────────────────────────────────────────────────
+  {
+    slug: "bad-bunny-rick-owens",
+    // Copia corregida del original ("RICK OWNENS" en la portada); el PDF tal
+    // cual lo entrego Anabel sigue en la raiz de la carpeta.
+    sources: [{ type: "pdf", path: "Trabajos/ESTILISMO/Bad Bunny x Rick Owens.pdf" }],
+  },
 ];
 
 /** Retrato para el hero y la pagina /sobre. */

@@ -2,9 +2,9 @@ import type { Content } from "./types";
 
 export const es: Content = {
   meta: {
-    title: "Anabel Pérez Lara — Publicidad & Relaciones Públicas",
+    title: "Anabel Pérez",
     description:
-      "Portfolio de Anabel Pérez Lara, estudiante de Publicidad y Relaciones Públicas y Community Manager. Creatividad, comunicación y estrategia de marca.",
+      "Portfolio creativo de Anabel Pérez: comunicación, fotografía, estilismo y estrategia de marca.",
   },
   nav: {
     work: "Trabajo",
@@ -16,9 +16,9 @@ export const es: Content = {
   clientes: {
     index: "01",
     eyebrow: "Clientes",
-    title: "Marcas que cuido cada día",
+    title: "Trabajo con marcas",
     intro:
-      "Contenido, fotografía y estrategia para las cuentas que llevo como Community Manager.",
+      "Contenido, fotografía y estrategia de redes que he creado para marcas reales.",
   },
   proyectos: {
     index: "02",
@@ -26,6 +26,13 @@ export const es: Content = {
     title: "Propuestas creativas",
     intro:
       "Trabajo creativo de campaña, identidad de marca y relaciones públicas, de la idea al dossier.",
+  },
+  estilismo: {
+    index: "03",
+    eyebrow: "Estilismo",
+    title: "Vestir una idea",
+    intro:
+      "Propuestas de estilismo y dirección de imagen: del concepto al look completo, con peluquería y maquillaje.",
   },
   project: {
     back: "Todo el trabajo",
@@ -41,7 +48,7 @@ export const es: Content = {
     ],
   },
   contact: {
-    index: "03",
+    index: "04",
     eyebrow: "Contacto",
     title: "¿Hablamos?",
     cta: "Escríbeme",

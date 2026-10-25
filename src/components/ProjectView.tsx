@@ -169,6 +169,8 @@ export function ProjectView({ project }: { project: Project }) {
         )}
 
         {/* ── Anterior / siguiente ────────────────────────────────────── */}
+        {/* Una seccion con un solo proyecto se enlazaria a si misma: sin nav. */}
+        {prev.slug !== project.slug && (
         <nav className="mt-24 grid grid-cols-2 gap-6 border-t border-line pt-8">
           <Link
             href={`/trabajo/${prev.slug}`}
@@ -195,6 +197,7 @@ export function ProjectView({ project }: { project: Project }) {
             </span>
           </Link>
         </nav>
+        )}
       </div>
 
       <Lightbox

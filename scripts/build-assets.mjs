@@ -236,11 +236,11 @@ async function buildSocialCard() {
   const text = Buffer.from(
     `<svg xmlns="http://www.w3.org/2000/svg" width="${W - PHOTO_W}" height="${H}">
        <text x="${PAD}" y="222" font-family="Georgia, 'Times New Roman', serif"
-             font-size="24" letter-spacing="4" fill="#948c81">ANABEL PÉREZ LARA</text>
+             font-size="24" letter-spacing="4" fill="#948c81">ANABEL PÉREZ</text>
        <text x="${PAD}" y="326" font-family="Georgia, 'Times New Roman', serif"
-             font-size="64" fill="#262220">Publicidad &amp;</text>
+             font-size="64" fill="#262220">Portfolio</text>
        <text x="${PAD}" y="400" font-family="Georgia, 'Times New Roman', serif"
-             font-size="64" fill="#262220">Relaciones Públicas</text>
+             font-size="64" fill="#262220">creativo</text>
        <rect x="${PAD}" y="446" width="86" height="3" fill="#b5674a"/>
      </svg>`,
   );

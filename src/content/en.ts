@@ -2,9 +2,9 @@ import type { Content } from "./types";
 
 export const en: Content = {
   meta: {
-    title: "Anabel Pérez Lara — Advertising & Public Relations",
+    title: "Anabel Pérez",
     description:
-      "Portfolio of Anabel Pérez Lara, Advertising and Public Relations student and Community Manager. Creativity, communication and brand strategy.",
+      "Creative portfolio of Anabel Pérez: communication, photography, styling and brand strategy.",
   },
   nav: {
     work: "Work",
@@ -16,9 +16,9 @@ export const en: Content = {
   clientes: {
     index: "01",
     eyebrow: "Clients",
-    title: "Brands I look after every day",
+    title: "Working with brands",
     intro:
-      "Content, photography and strategy for the accounts I run as a Community Manager.",
+      "Content, photography and social strategy I've created for real brands.",
   },
   proyectos: {
     index: "02",
@@ -26,6 +26,13 @@ export const en: Content = {
     title: "Creative proposals",
     intro:
       "Creative campaign work, brand identity and public relations, from the idea to the finished dossier.",
+  },
+  estilismo: {
+    index: "03",
+    eyebrow: "Styling",
+    title: "Dressing an idea",
+    intro:
+      "Styling and image direction proposals: from the concept to the complete look, with hair and make-up.",
   },
   project: {
     back: "All work",
@@ -41,7 +48,7 @@ export const en: Content = {
     ],
   },
   contact: {
-    index: "03",
+    index: "04",
     eyebrow: "Contact",
     title: "Shall we talk?",
     cta: "Get in touch",

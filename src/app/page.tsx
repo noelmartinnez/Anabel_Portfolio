@@ -14,6 +14,7 @@ export default function Home() {
         <Hero />
         <WorkGrid section="clientes" />
         <WorkGrid section="proyectos" />
+        <WorkGrid section="estilismo" />
         <Contact year={year} />
       </main>
     </>
